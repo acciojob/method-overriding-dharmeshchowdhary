@@ -6,19 +6,18 @@ public class Main {
         b.AMeth();
         b.meth();
     }
-}
-
-class A{
-    public void meth(){
-        System.out.println("Invoking method from class A");
+    class A{
+        public void meth(){
+            System.out.println("Invoking method from class A");
+        }
     }
-}
-
-class B extends A{
-    public void AMeth(){
-        super.meth();
-    }
-    public void meth(){
-        System.out.println("Method is overridden in Extendend class B");
+    
+    class B extends A{
+        public void AMeth(){
+            super.meth();
+        }
+        public void meth(){
+            System.out.println("Method is overridden in Extendend class B");
+        }
     }
 }
