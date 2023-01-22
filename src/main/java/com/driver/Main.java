@@ -3,21 +3,21 @@ package com.driver;
 public class Main {
     public static void main(String[] args) {
         B b = new B();
-        b.AMeth();
-        b.meth();
+        System.out.println(b.AMeth());
+        System.out.println(b.meth());
     }
     public static class A{
-        public void meth(){
-            System.out.println("Invoking method from class A");
+        public String meth(){
+            return "Invoking method from class A";
         }
     }
     
     public static class B extends A{
-        public void AMeth(){
-            super.meth();
+        public String AMeth(){
+            return super.meth();
         }
-        public void meth(){
-            System.out.println("Method is overridden in Extendend class B");
+        public String meth(){
+            return "Method is overridden in Extendend class B";
         }
     }
 }
