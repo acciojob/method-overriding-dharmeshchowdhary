@@ -6,13 +6,13 @@ public class Main {
         b.AMeth();
         b.meth();
     }
-    class A{
+    public static class A{
         public void meth(){
             System.out.println("Invoking method from class A");
         }
     }
     
-    class B extends A{
+    public static class B extends A{
         public void AMeth(){
             super.meth();
         }
